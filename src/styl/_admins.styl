@@ -1,0 +1,58 @@
+.admins
+  background primary
+  height auto
+  display block
+  padding-top rem(50px)
+  padding-bottom rem(50px)
+  .content
+    center(90%)
+    margin-top rem(50px)
+    margin-bottom rem(35px)
+    +tablet()
+      margin-bottom rem(45px)
+    +desktop()
+      margin-bottom rem(60px)
+  .title
+    color secondary
+    text-align center
+    font-size rem(40px)
+    display block
+    +tablet()
+      font-size rem(50px)
+    +desktop()
+      font-size rem(70px)
+  .card-admin
+    background feat
+    column(1, gutter: .8)
+    display block
+    box-sizing border-box
+    border 1px solid secondary
+    border-radius rem(5px)
+    margin-bottom rem(20px)
+    +desktop()
+      column(1/4, gutter: .8)
+  .card-img
+    width 100%
+    height rem(400px)
+    min-height rem(400px)
+    text-align center
+    img
+      width 100%
+      height rem(400px)
+      min-height rem(400px)
+  .card-title
+    width 100%
+    background secondary
+    color primary
+    text-align center
+    font-size rem(25px)
+    +tablet()
+      font-size rem(30px)
+    +desktop()
+      font-size rem(35px)
+  .card-description
+    color secondary
+    text-align center
+    padding-left rem(20px)
+    padding-right rem(20px)
+    font-size rem(25px)

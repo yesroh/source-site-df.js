@@ -1,20 +1,16 @@
-$bg-footer
-  background secondary
-  width 100%
-  height 7%
-  position fixed
-  bottom 0
-  text-align center
-  padding-top rem(20px)
-
 .footer
-  @extends $bg-footer
-  span, a
-    color primary
-    text-align center
-    font-family Prototype
+  background #000
+  height auto
+  display block
+  padding-top rem(20px)
+  .content
+    center(90%)
+  .developed
+    color feat
     font-size rem(20px)
-    +above(cut_size)
+    text-align center
+    margin auto
+    +tablet()
+      font-size rem(25px)
+    +desktop()
       font-size rem(30px)
-  a:hover
-    color hover

@@ -1,15 +1,85 @@
-extends ./template.jade
-
-block title
-  title FireFront Boilerplate by Wendell Adriel
-
-block header
-  .content
-    h1
-      span.title DF.js
-      br
-      span.description Em breve a comunidade JS do DF vai avançar para um próximo nível
-
-block footer
-    span.author Desenvolvido com ❤ por
-      a(href = 'http://br.linkedin.com/in/wendelladrielti/en', target = '_blank') Wendell Adriel
+doctype html
+html(lang = 'en')
+  head
+    meta(charset = 'UTF-8')
+    link(rel = 'shortcut icon', type = 'image/png', href = './assets/img/favicon-16x16.png')
+    link(rel = 'stylesheet', href = './assets/css/main.css')
+    title DF.js - Comunidade JS do DF
+  body
+    header.header
+      .content
+        img(src="./assets/img/logo-dfjs-branco.png")
+      #btn-goabout.btn-more Conheça mais sobre o DF.js
+    section#sec-about.about
+      .title Comunidade JS do DF
+      .content
+        .card-about
+          .card-title Meetups
+          .card-content
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            i.fa.fa-plus
+        .card-about
+          .card-title Palestras
+          .card-content
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        .card-about
+          .card-title Workshops
+          .card-content
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .subtitle Venha você também fazer parte!!!
+      .more-events
+        span#btn-goevents.btn-events Próximos Eventos
+    section#sec-events.events
+      .title Confira nossos próximos eventos
+      .content
+        .card-event
+          .event-type Meetup
+          .event-title 1º Meetup DF.js
+          .event-date A confirmar
+        .card-event
+          .event-type Workshop
+          .event-title A confirmar
+          .event-date A confirmar
+        .card-event
+          .event-type Palestra
+          .event-title A confirmar
+          .event-date A confirmar
+      .subtitle Estamos te esperando em nossos eventos!!!
+      .more-admins
+        span#btn-goadmins.btn-admins Conheça os Admins
+    section#sec-admins.admins
+      .title Conheça um pouco dos admins do DF.js
+      .content
+        .card-admin
+          .card-img
+            img(src='./assets/img/wendell.jpg')
+          .card-title Wendell Adriel
+          .card-description
+            p Full Stack Developer
+            p Criador do DF.js e da #[a(href="http://codeshare.com.br", target="_blank") Codeshare]
+        .card-admin
+          .card-img
+          .card-title Itacir Pompeu
+          .card-description
+            p Back-End Developer
+            p Admin do DF.js
+        .card-admin
+          .card-img
+          .card-title Alex Rodin
+          .card-description
+            p Full Stack Developer
+            p Admin do DF.js
+        .card-admin
+          .card-img
+          .card-title Matheus Oliveira
+          .card-description
+            p Full Stack Developer
+            p Admin do DF.js
+    #btn-gotop.fixed-btn ^
+    footer.footer
+      .content
+        .developed Desenvolvido com ❤ por #[a(href="wendelladriel.github.io", target="_blank") Wendell Adriel]
+    script(src = './assets/js/main.js')

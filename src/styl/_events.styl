@@ -1,0 +1,118 @@
+.events
+  background secondary
+  height auto
+  display block
+  padding-top rem(50px)
+  padding-bottom rem(50px)
+  .title
+    color primary
+    text-align center
+    font-size rem(40px)
+    display block
+    +tablet()
+      font-size rem(50px)
+    +desktop()
+      font-size rem(70px)
+  .title
+    color primary
+    text-align center
+    font-size rem(40px)
+    display block
+    +tablet()
+      font-size rem(50px)
+    +desktop()
+      font-size rem(70px)
+  .subtitle
+    color primary
+    text-align center
+    font-size rem(30px)
+    display block
+    +tablet()
+      font-size rem(40px)
+    +desktop()
+      font-size rem(60px)
+  .content
+    center(90%)
+    margin-top rem(50px)
+    margin-bottom rem(35px)
+    +tablet()
+      margin-bottom rem(45px)
+    +desktop()
+      margin-bottom rem(60px)
+  .card-event
+    background transparent
+    column(1, gutter: .8)
+    display block
+    box-sizing border-box
+    border 1px solid primary
+    border-radius rem(5px)
+    margin-bottom rem(20px)
+  .event-type
+    background feat
+    color secondary
+    span(1)
+    box-sizing border-box
+    padding rem(10px)
+    border-bottom 1px solid primary
+    font-size rem(30px)
+    text-align center
+    +desktop()
+      span(1/6)
+      border-bottom none
+      border-right 2px solid primary
+      text-align center
+  .event-title
+    background transparent
+    color primary
+    span(1)
+    box-sizing border-box
+    padding rem(10px)
+    border-bottom 1px solid primary
+    font-size rem(25px)
+    text-align center
+    +desktop()
+      span(4/6)
+      border-bottom none
+      border-right 2px solid primary
+      text-align center
+  .event-date
+    background #000
+    color feat
+    span(1)
+    box-sizing border-box
+    padding rem(10px)
+    font-size rem(30px)
+    text-align center
+    +desktop()
+      span(1/6)
+      text-align center
+  .more-admins
+    background secondary
+    width 100%
+    margin-top rem(40px)
+    text-align center
+    +tablet()
+      margin-top rem(50px)
+    +desktop()
+      margin-top rem(60px)
+  .btn-admins
+    background primary
+    color secondary
+    padding rem(15px)
+    border-radius rem(9px)
+    font-size rem(25px)
+    cursor pointer
+    transition all 1s ease
+    &:hover
+      background feat
+      color secondary
+      font-size rem(35px)
+      transition all 1s ease
+    +tablet()
+      font-size rem(40px)
+      &:hover
+        font-size rem(45px)
+    +desktop()
+      font-size rem(45px)
+      &:hover
+        font-size rem(50px)
