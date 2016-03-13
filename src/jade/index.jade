@@ -6,10 +6,10 @@ html(lang = 'en')
     link(rel = 'stylesheet', href = './assets/css/main.css')
     title DF.js - Comunidade JS do DF
   body
-    header.header
+    header#sec-header.header
       .content
         img(src="./assets/img/logo-dfjs-branco.png")
-      #btn-goabout.btn-more Conheça mais sobre o DF.js
+      div(onclick="$('#sec-about').animatescroll({ scrollSpeed:2000, easing:'easeInOutBack' });").btn-more Conheça mais sobre o DF.js
     section#sec-about.about
       .title Comunidade JS do DF
       .content
@@ -31,7 +31,7 @@ html(lang = 'en')
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       .subtitle Venha você também fazer parte!!!
       .more-events
-        span#btn-goevents.btn-events Próximos Eventos
+        span(onclick="$('#sec-events').animatescroll({ scrollSpeed:2000, easing:'easeInOutBack' });").btn-events Próximos Eventos
     section#sec-events.events
       .title Confira nossos próximos eventos
       .content
@@ -47,39 +47,46 @@ html(lang = 'en')
           .event-type Palestra
           .event-title A confirmar
           .event-date A confirmar
-      .subtitle Estamos te esperando em nossos eventos!!!
+      .subtitle Estamos te esperando em nossos eventos!!! Faça parte também de nosso #[a(href="https://facebook.com/groups/javascriptdf", target="_blank") Grupo no Facebook] e no #[a(href="https://telegram.me/joinchat/CUxp7QbxhI-crQFszrh0rA", target="_blank") Telegram] e também fique de olho em nosso #[a(href="https://github.com/DF-js", target="_blank") Github]
       .more-admins
-        span#btn-goadmins.btn-admins Conheça os Admins
+        span(onclick="$('#sec-admins').animatescroll({ scrollSpeed:2000, easing:'easeInOutBack' });").btn-admins Conheça os Admins
     section#sec-admins.admins
       .title Conheça um pouco dos admins do DF.js
       .content
         .card-admin
           .card-img
-            img(src='./assets/img/wendell.jpg')
+            a(href="http://wendelladriel.github.io", target="_blank")
+              img(src='./assets/img/wendell.jpg')
           .card-title Wendell Adriel
           .card-description
             p Full Stack Developer
             p Criador do DF.js e da #[a(href="http://codeshare.com.br", target="_blank") Codeshare]
         .card-admin
           .card-img
+            a(href="http://pompeu.github.io", target="_blank")
+              img(src='./assets/img/pompeu.jpg')
           .card-title Itacir Pompeu
           .card-description
             p Back-End Developer
             p Admin do DF.js
         .card-admin
           .card-img
+            a(href="http://alexrodin.info", target="_blank")
+              img(src='./assets/img/alex.jpg')
           .card-title Alex Rodin
           .card-description
             p Full Stack Developer
             p Admin do DF.js
         .card-admin
           .card-img
+            a(href="https://facebook.com/matthewoliveira.me", target="_blank")
+              img(src='./assets/img/matheus.jpg')
           .card-title Matheus Oliveira
           .card-description
             p Full Stack Developer
             p Admin do DF.js
-    #btn-gotop.fixed-btn ^
+    div(onclick="$('#sec-header').animatescroll({ scrollSpeed:2000, easing:'easeInOutBack' });").fixed-btn ^
     footer.footer
       .content
-        .developed Desenvolvido com ❤ por #[a(href="wendelladriel.github.io", target="_blank") Wendell Adriel]
+        .developed Desenvolvido com ❤ por #[a(href="http://wendelladriel.github.io", target="_blank") Wendell Adriel]
     script(src = './assets/js/main.js')
