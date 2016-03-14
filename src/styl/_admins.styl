@@ -8,10 +8,10 @@
     center(90%)
     margin-top rem(50px)
     margin-bottom rem(35px)
-    display flex
     +tablet()
       margin-bottom rem(45px)
     +desktop()
+      display flex
       margin-bottom rem(60px)
   .title
     color secondary
@@ -26,12 +26,12 @@
     background feat
     column(1, gutter: .8)
     display block
-    flex 1
     box-sizing border-box
     border 1px solid secondary
     border-radius rem(5px)
     margin-bottom rem(20px)
     +desktop()
+      flex 1
       column(1/4, gutter: .8)
   .card-img
     width 100%
