@@ -8,6 +8,9 @@ Dê um **Fork** nesse repositório e nos envie seu **Pull Request!!!**
 
 > Para executar: 
 ```sh
+$ git clone https://github.com/DF-js/source-site-df.js.git
+```
+```sh
 $ npm install
 ```
 ```sh
